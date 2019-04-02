@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@mipmap/bj2"
+    >
+
+    <ImageView
+        android:id="@+id/uipicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/naruto_log"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_idtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/user_top"
+        android:layout_marginTop="230dp">
+
+        <EditText
+            android:id="@+id/idtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uipicture"
+            android:background="@null"
+            android:drawableLeft="@mipmap/user"
+            android:hint="        请输入账号/手机号"
+            android:textColorHint="@android:color/background_dark"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            />
+    </LinearLayout>
+
+
+    <!--账号为EditText_drawableLeft方法，
+    密码框用线性布局分开练习-->
+
+    <LinearLayout
+        android:id="@+id/layout_pw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_idtext"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/user_below"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/pw" />
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="6-16位数字或字符密码"
+            android:textColorHint="@android:color/background_dark"
+            android:paddingLeft="25dp"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt-come"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_pw"
+        android:layout_centerInParent="true"
+        android:text="进入火影世界"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <Button
+        android:id="@+id/bt-test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bt-come"
+        android:layout_centerInParent="true"
+        android:text="进入测试页面"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="help"
+        android:layout_alignParentBottom="true"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/chose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="模式选择"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/chose1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一、常规"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            >
+            <RadioButton
+                android:id="@+id/rg_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="战斗"
+
+                />
+            <RadioButton
+                android:id="@+id/rg_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="风景"
+                android:layout_marginLeft="50dp"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/chose2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg"
+            android:layout_marginTop="50dp"
+            android:text="二、出场人物："
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+            <CheckBox
+                android:id="@+id/cb-all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="全选"
+                />
+            <CheckBox
+                android:id="@+id/cb_mr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:text="鸣人"
+
+                />
+        <CheckBox
+            android:id="@+id/cb_zz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="佐助"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_th"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="自来也"
+            />
+
+        <CheckBox
+            android:id="@+id/cb_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:text="六代目"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt-go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="150dp"
+        android:text="GO"
+
+
+        />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
